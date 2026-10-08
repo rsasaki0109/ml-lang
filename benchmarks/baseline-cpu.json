@@ -1,0 +1,376 @@
+{
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "cpu_affinity": [
+    0
+  ],
+  "binary_sha256": "b5ce45254299bbe23125de8bbf53441c5a2585bf4549c7cf4a05aa567ddec4e2",
+  "source_sha256": "8510b14e2b1ee1308fe80c33e047f3589130840fc96dda4ce0f90edc405586b0",
+  "dtype": "f64",
+  "device": "cpu",
+  "samples": 5,
+  "date": "2026-10-08",
+  "rust": "1.85.1",
+  "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "protocol": "One warmup; median of complete workload executions. RSS is self-reported /proc/self/status VmHWM after warmup/JIT and measured runs, including imports; launch RSS is separately reported by wait4. No GPU results.",
+  "results": [
+    {
+      "compile_seconds": 6.5701e-05,
+      "median_seconds": 0.000792636,
+      "min_seconds": 0.000761086,
+      "iterations": 5,
+      "peak_retained_tensor_bytes": 98408,
+      "peak_rss_bytes": 1667072,
+      "launch_peak_rss_bytes": 15073280,
+      "process_seconds": 0.008272733000012522,
+      "backend": "ml-lang",
+      "workload": "matmul",
+      "size": 64,
+      "validation": [
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ],
+        [
+          262144.0
+        ]
+      ]
+    },
+    {
+      "median_seconds": 0.000119768000104159,
+      "min_seconds": 0.00011785200013036956,
+      "cold_seconds": 0.0029261959998621023,
+      "iterations": 5,
+      "version": "2.6.0+cpu",
+      "validation": [
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0
+      ],
+      "peak_rss_bytes": 249253888,
+      "launch_peak_rss_bytes": 251486208,
+      "process_seconds": 1.7632665739999993,
+      "backend": "torch-eager",
+      "workload": "matmul",
+      "size": 64
+    },
+    {
+      "median_seconds": 0.0006023879998338089,
+      "min_seconds": 0.0005564699999922595,
+      "cold_seconds": 0.1062729830000535,
+      "iterations": 5,
+      "version": "0.4.38",
+      "validation": [
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0,
+        262144.0
+      ],
+      "peak_rss_bytes": 209694720,
+      "launch_peak_rss_bytes": 209661952,
+      "process_seconds": 0.6682317510001212,
+      "backend": "jax-jit",
+      "workload": "matmul",
+      "size": 64
+    },
+    {
+      "compile_seconds": 0.000187144,
+      "median_seconds": 0.007604917,
+      "min_seconds": 0.007135842,
+      "iterations": 5,
+      "peak_retained_tensor_bytes": 393320,
+      "peak_rss_bytes": 2551808,
+      "launch_peak_rss_bytes": 15073280,
+      "process_seconds": 0.05284174400003394,
+      "backend": "ml-lang",
+      "workload": "matmul",
+      "size": 128,
+      "validation": [
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ],
+        [
+          2097152.0
+        ]
+      ]
+    },
+    {
+      "median_seconds": 0.000597802999891428,
+      "min_seconds": 0.0005665050000516203,
+      "cold_seconds": 0.00336253399996167,
+      "iterations": 5,
+      "version": "2.6.0+cpu",
+      "validation": [
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0
+      ],
+      "peak_rss_bytes": 248909824,
+      "launch_peak_rss_bytes": 251142144,
+      "process_seconds": 1.9543070449999504,
+      "backend": "torch-eager",
+      "workload": "matmul",
+      "size": 128
+    },
+    {
+      "median_seconds": 0.0024729209999350132,
+      "min_seconds": 0.0021108569999341853,
+      "cold_seconds": 0.10018559599984656,
+      "iterations": 5,
+      "version": "0.4.38",
+      "validation": [
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0,
+        2097152.0
+      ],
+      "peak_rss_bytes": 213028864,
+      "launch_peak_rss_bytes": 213008384,
+      "process_seconds": 0.8516108180001538,
+      "backend": "jax-jit",
+      "workload": "matmul",
+      "size": 128
+    },
+    {
+      "compile_seconds": 0.000412235,
+      "median_seconds": 0.063902938,
+      "min_seconds": 0.056306737,
+      "iterations": 5,
+      "peak_retained_tensor_bytes": 1572968,
+      "peak_rss_bytes": 6115328,
+      "launch_peak_rss_bytes": 15073280,
+      "process_seconds": 0.39298423800005367,
+      "backend": "ml-lang",
+      "workload": "matmul",
+      "size": 256,
+      "validation": [
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ],
+        [
+          16777216.0
+        ]
+      ]
+    },
+    {
+      "median_seconds": 0.020512366999810183,
+      "min_seconds": 0.014032707000069422,
+      "cold_seconds": 0.019321186000070156,
+      "iterations": 5,
+      "version": "2.6.0+cpu",
+      "validation": [
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0
+      ],
+      "peak_rss_bytes": 251076608,
+      "launch_peak_rss_bytes": 251932672,
+      "process_seconds": 6.016261358000065,
+      "backend": "torch-eager",
+      "workload": "matmul",
+      "size": 256
+    },
+    {
+      "median_seconds": 0.041066924999995535,
+      "min_seconds": 0.03685957900006542,
+      "cold_seconds": 0.2893459790000179,
+      "iterations": 5,
+      "version": "0.4.38",
+      "validation": [
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0,
+        16777216.0
+      ],
+      "peak_rss_bytes": 217276416,
+      "launch_peak_rss_bytes": 217276416,
+      "process_seconds": 2.108189343000049,
+      "backend": "jax-jit",
+      "workload": "matmul",
+      "size": 256
+    },
+    {
+      "compile_seconds": 0.00014005,
+      "median_seconds": 0.050254093,
+      "min_seconds": 0.0426445,
+      "iterations": 5,
+      "peak_retained_tensor_bytes": 3712,
+      "peak_rss_bytes": 1536000,
+      "launch_peak_rss_bytes": 15073280,
+      "process_seconds": 0.29560541700016074,
+      "backend": "ml-lang",
+      "workload": "xor",
+      "size": 0,
+      "validation": [
+        [
+          1.7236161361424478
+        ],
+        [
+          0.0004049660335588171
+        ],
+        [
+          -0.9795142167471372,
+          0.9802369454286979,
+          0.977740723937191,
+          -0.9822759168947054
+        ]
+      ]
+    },
+    {
+      "median_seconds": 0.6377816839999468,
+      "min_seconds": 0.6255255339999621,
+      "cold_seconds": 0.6634350970000469,
+      "iterations": 5,
+      "version": "2.6.0+cpu",
+      "validation": [
+        1.7236161361424478,
+        0.00040496603355881603,
+        [
+          -0.9795142167471373,
+          0.9802369454286979,
+          0.977740723937191,
+          -0.9822759168947054
+        ]
+      ],
+      "peak_rss_bytes": 258445312,
+      "launch_peak_rss_bytes": 260485120,
+      "process_seconds": 8.070698934999882,
+      "backend": "torch-eager",
+      "workload": "xor",
+      "size": 0
+    },
+    {
+      "median_seconds": 0.004755794000175229,
+      "min_seconds": 0.003490638999892326,
+      "cold_seconds": 0.5798056300000098,
+      "iterations": 5,
+      "version": "0.4.38",
+      "validation": [
+        1.7236161361424476,
+        0.00040496603355881717,
+        [
+          -0.9795142167471372,
+          0.9802369454286979,
+          0.977740723937191,
+          -0.9822759168947054
+        ]
+      ],
+      "peak_rss_bytes": 236322816,
+      "launch_peak_rss_bytes": 236298240,
+      "process_seconds": 1.5740849740000158,
+      "backend": "jax-jit",
+      "workload": "xor",
+      "size": 0
+    }
+  ]
+}

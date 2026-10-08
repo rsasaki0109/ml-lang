@@ -1,0 +1,5 @@
+# CPU wheels, tested with Python 3.12. Frameworks are optional developer tools.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.6.0+cpu
+jax[cpu]==0.4.38
+numpy==2.5.3

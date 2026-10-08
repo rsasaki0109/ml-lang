@@ -1,0 +1,19 @@
+[package]
+name = "ml-lang"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "An experimental shape-checked language for machine learning"
+license = "MIT"
+repository = "https://github.com/rsasaki0109/ml-lang"
+
+[lib]
+name = "ml_lang"
+
+[[bin]]
+name = "ml"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1
